@@ -37,7 +37,7 @@ This repository contains the implementation of a client-server architecture for 
 
 4. **Run the Client(s)**:
 
-`./client [port] [server-ip-address]`
+`./client [port] [server-ip-address] <testfile.txt`
 
 
 **Usage**
