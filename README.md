@@ -1,4 +1,4 @@
-# **CMPUT 379 - Assignment 3: Client-Server / Monitoring**
+# **Client-Server / Monitoring**
 
 **Introduction**
 
