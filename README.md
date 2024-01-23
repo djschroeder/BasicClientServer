@@ -21,23 +21,22 @@ This repository contains the implementation of a client-server architecture for 
 
 1. **Clone the Repository** :
 
-git clone https://github.com/djschroeder/BasicClientServer.git
+`git clone https://github.com/djschroeder/BasicClientServer.git
+`
+2. **Compile the Programs** :
 
-1. **Compile the Programs** :
+`gcc -o server server.c
 
-gcc -o server server.c
+gcc -o client client.c`
 
-gcc -o client client.c
+3. **Run the Server** :
 
-1. **Run the Server** :
+`./server [port]
+`
+4. **Run the Client(s)**:
 
-./server [port]
+`./client [port] [server-ip-address]`
 
-1. **Run the Client(s)**:
-
-./client [port] [server-ip-address]
-
-1.
 
 **Usage**
 
