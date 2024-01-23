@@ -53,6 +53,8 @@ The server processes these commands and returns appropriate responses.
 
 Expect the server to log transactions and client connections. Clients will receive acknowledgments of processed requests.
 
+For a more detailed description, view Assign3.pdf
+
 **Testing and Limitations**
 
 - Extensively tested in a Linux environment.
