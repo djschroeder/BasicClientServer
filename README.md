@@ -1,69 +1,70 @@
-CMPUT 379 - Assignment 3: Client-Server / Monitoring
-Introduction
+# **CMPUT 379 - Assignment 3: Client-Server / Monitoring**
+
+**Introduction**
 
 This repository contains the implementation of a client-server architecture for CMPUT 379's Assignment 3. It simulates a simple client-server model where clients send transactions to the server for processing, showcasing basic networking and multi-threading concepts.
-Features
 
-    Client-Server Architecture: Implementing a basic communication model between clients and a server.
-    Transaction Processing: Clients generate and send transactions (T<n>) to the server.
-    Multi-Client Handling: Server processes transactions and manages multiple client connections simultaneously.
-    Command-Line Interface: Both server and client are operated via command-line arguments.
+**Features**
 
-Requirements
+- **Client-Server Architecture** : Implementing a basic communication model between clients and a server.
+- **Transaction Processing** : Clients generate and send transactions (T\<n\>) to the server.
+- **Multi-Client Handling** : Server processes transactions and manages multiple client connections simultaneously.
+- **Command-Line Interface** : Both server and client are operated via command-line arguments.
 
-    Linux-based Operating System
-    GCC Compiler
-    Standard C Libraries
+**Requirements**
 
-Installation and Running the Program
+- Linux-based Operating System
+- GCC Compiler
+- Standard C Libraries
 
-    Clone the Repository:
+**Installation and Running the Program**
 
-    bash
+1. **Clone the Repository** :
 
-git clone [Repository URL]
+git clone https://github.com/djschroeder/BasicClientServer.git
 
-Compile the Programs:
+1. **Compile the Programs** :
 
 gcc -o server server.c
+
 gcc -o client client.c
 
-Run the Server:
-
-bash
+1. **Run the Server** :
 
 ./server [port]
 
-Run the Client(s):
+1. **Run the Client(s)**:
 
-css
+./client [port] [server-ip-address]
 
-    ./client [port] [server-ip-address]
+1.
 
-Usage
+**Usage**
 
 Clients can send two types of commands to the server:
 
-    Transaction Request (T<n>): Requests the server to process a transaction.
-    Status Request (S<n>): Requests the server's current status.
+- **Transaction Request (T\<n\>)**: Requests the server to process a transaction.
+- **Status Request (S\<n\>)**: Requests the server's current status.
 
 The server processes these commands and returns appropriate responses.
-Sample Output
+
+**Sample Output**
 
 Expect the server to log transactions and client connections. Clients will receive acknowledgments of processed requests.
-Testing and Limitations
 
-    Extensively tested in a Linux environment.
-    Known limitation: Does not support concurrent processing of multiple transactions from the same client.
+**Testing and Limitations**
 
-Contributions
+- Extensively tested in a Linux environment.
+- Known limitation: Does not support concurrent processing of multiple transactions from the same client.
 
-    David Schroeder
+**Contributions**
 
-License
+- David Schroeder
+
+**License**
 
 Apache 2.0
 
-Acknowledgments
+**Acknowledgments**
 
-    Special thanks to CMPUT 379 course staff and fellow students.
+- Special thanks to CMPUT 379 course staff and fellow students.
