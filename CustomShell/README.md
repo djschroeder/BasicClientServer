@@ -19,7 +19,7 @@ MiniShell is a command-line interface (CLI) shell designed for educational purpo
 - Redirect input and output using `<` and `>` followed by file names.
 
 ## **Implementation Notes**
-- Implemented in C/C++.
+- Implemented in C.
 - Utilizes system calls like `exec`, `fork`, `getrusage`, and `kill`.
 - Adheres to specific constants for line lengths, argument counts, and process table entries.
 
