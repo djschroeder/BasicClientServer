@@ -1,29 +1,34 @@
-**# Producer-Consumer Project**
+# **Producer-Consumer Project**
 
-**## Overview**
-This project simulates the Producer-Consumer problem with synchronization mechanisms in a multi-threaded environment.
+## **Overview**
+This project is an implementation of the Producer-Consumer problem, also known as the bounded-buffer problem. It demonstrates a classic multi-process synchronization problem, where producer and consumer processes share a common, fixed-size buffer used as a queue.
 
-**## Features**
-- Multi-threaded producer and consumer processes.
-- Fixed-size buffer queue.
-- Command-line parameters to control thread behavior.
+## **Features**
+- **Command-Line Interface**: Accepts one or two arguments, `nthreads` and an optional `id`, to create consumer threads and differentiate output files.
+- **Producer-Consumer Synchronization**: Handles synchronization between producing and consuming threads with a shared buffer.
+- **Concurrent Processing**: Ensures concurrent execution of producer and consumers without data corruption.
+- **Input Commands**: Supports `T<n>` for transactions and `S<n>` for sleep, controlling the flow of production.
 
-**## Building the Project**
-Use `make` to compile the source files into an executable.
+## **Building and Running**
+- **Compilation**: Compile the program with a `Makefile` to create an executable named `prodcon`.
+- **Execution**: Run using `./prodcon nthreads <id>`. Input can be provided from a keyboard or redirected from a file.
 
-**## Running the Application**
-Run the compiled executable with the required arguments to start the producer and consumer threads.
+## **Sample Output**
+- The log files provide detailed information like timestamps, thread IDs, and queue status.
+- The output includes high-level events such as Ask, Receive, Work, Sleep, Complete, and End.
 
-**## Usage**
-Commands within the application to produce and consume items in the buffer.
+## **Implementation**
+- Implemented in C with a focus on multi-threading, shared memory, and synchronization.
+- The program maintains a queue with the producer adding work and consumers removing work from it, handling full or empty queue states appropriately.
 
-**## Output**
-Logs and console output that reflect the producer-consumer activity and system state.
+## **Considerations**
+- Equal treatment of all consumer threads.
+- Ensuring non-garbled, logically consistent log output.
+- Efficient and minimal synchronization for correctness.
 
-**## Implementation**
-Details of the synchronization techniques used (semaphores, mutexes, etc.).
+## **Submission Guidelines**
+- Submit the source code, `Makefile`, and an optional `README` file.
 
-**## Contributing**
-Guidelines for contributing to the project, if applicable.
-
+## **License**
+This project is open-source and is intended for educational purposes related to multi-process synchronization and thread management.
 
